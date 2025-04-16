@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="highlight">M</span>OVIES<span class="highlight">!</span>
+            </div>
+        </header>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Enter your movie name">
+            
+            <select class="dropdown-select" id="genreFilter">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="animation">Animation</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="family">Family</option>
+                <option value="documentary">Documentary</option>
+            </select>
+            
+            <button class="sort-btn" id="sortBtn">Sort</button>
+            <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+        
+        <div class="movies-grid" id="moviesGrid">
+            <!-- Movies will be added here dynamically -->
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
